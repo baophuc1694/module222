@@ -33,19 +33,7 @@ public class hienthihinh {
                 }
                 break;
             }
-            case 3: {
-                System.out.println("Drawing  isosceles triangle");
-                for (int i=1;i<6;i++){
-                    for(int j=5;j>i;j--){
-                        System.out.print(" ");
-                    }
-                    for(int f=0;f<2*i-1;f++){
-                        System.out.print("*");
-                    }
-                    System.out.print("\n");
-                }
-                break;
-            }
+
             case 4: {
                 System.exit(0);
             }
