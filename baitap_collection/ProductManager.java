@@ -5,9 +5,9 @@ package baitap_collection;
 import java.util.ArrayList;
 
 public class ProductManager extends ArrayList<Product> {
-    public ProductManager(){
+    ProductManager(){
     }
-    public void editProduct(int id, String name, double price){
+    void editProduct(int id, String name, double price){
         searchById(id).setName(name);
         searchById(id).setPrice(price);
     }
@@ -20,7 +20,7 @@ public class ProductManager extends ArrayList<Product> {
         }
         return null;
     }
-    public void searchByName(String name){
+    void searchByName(String name){
         for (Product product : this) {
             if (name.equals(product.getName())) {
                 System.out.println(product.toString());

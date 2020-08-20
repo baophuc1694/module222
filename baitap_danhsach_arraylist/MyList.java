@@ -6,10 +6,10 @@ import java.util.Arrays;
 
 public class MyList<E> {
     private int size = 0;
-    static final int DEFAULT_CAPACITY = 10;
+    private static final int DEFAULT_CAPACITY = 10;
     private Object[] elements;
 
-    public MyList() {
+    MyList() {
         elements = new Object[DEFAULT_CAPACITY];
     }
 
@@ -21,9 +21,7 @@ public class MyList<E> {
     }
 
     public void add(int index, E element) {
-        for (int i = index; i < size; i++) {
-            elements[i + 1] = elements[i];
-        }
+        if (size - index >= 0) System.arraycopy(elements, index, elements, index + 1, size - index);
         elements[index] = element;
         size++;
     }
@@ -62,7 +60,7 @@ public class MyList<E> {
         }
         size = 0;
     }
-    public int indexOf(E o){
+    int indexOf(E o){
         for (int i =0; i < size; i++){
             if (elements[i].equals(o)){
                 return i;
@@ -70,9 +68,8 @@ public class MyList<E> {
         }
         return -1;
     }
-    public boolean addLast(E e){
+    void addLast(E e){
         addLast(e);
-        return true;
     }
 
 
