@@ -10,7 +10,7 @@ public class AlgorithmComplexityTest {
         int[] frequentChar = new int[255];
         for (int i = 0; i < inputString.length(); i++);
         int i = 0;
-        int ascii = (int) inputString.charAt(i);
+        int ascii = inputString.charAt(i);
         frequentChar[ascii] += 1;
         int max = 0;
         char character = (char) 255;

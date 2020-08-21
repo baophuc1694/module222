@@ -1,9 +1,15 @@
 package baitap_accsesmodifier;
 
+import java.util.Arrays;
+
 public class TestCircle {
-    public TestCircle(double radius) {
-    }
-    public TestCircle(double radius, String color){
+    private double radius;
+    private String color;
+
+    private TestCircle(double radius, String color){
+        super();
+        this.radius = radius;
+        this.color = color;
 
     }
 

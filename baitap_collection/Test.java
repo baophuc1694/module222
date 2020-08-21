@@ -74,24 +74,24 @@ public class Test {
                     String name1 = scanner6.nextLine();
                     productManager.searchByName(name1);
                     break;
-                case 6: //sắp xếp
-                    System.out.println("Sort");
-                    productManager.sort((pro1, pro2) -> {
-                        if (pro1.getPrice() < pro2.getPrice())
-                            return 1;
-                        else if (pro1.getPrice() > pro2.getPrice())
-                            return -1;
-                        else
-                            return 0;
-                    });
-                    productManager.sort(new Product());
-                {
-
-                    for (Product product: productManager){
-                        System.out.println(product);
-                    }
-                }
-                break;
+//                case 6: //sắp xếp
+//                    System.out.println("Sort");
+//                    productManager.sort((pro1, pro2) -> {
+//                        if (pro1.getPrice() < pro2.getPrice())
+//                            return 1;
+//                        else if (pro1.getPrice() > pro2.getPrice())
+//                            return -1;
+//                        else
+//                            return 0;
+//                    });
+//                    productManager.sort(new Product());
+//                {
+//
+//                    for (Product product: productManager){
+//                        System.out.println(product);
+//                    }
+//                }
+//                break;
 
 
 

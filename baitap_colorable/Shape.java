@@ -3,11 +3,14 @@ package baitap_colorable;
 public class Shape {
     private String color = "green";
     private boolean filled = true;
-    public Shape(){
+    public Shape(int i, int i1){
     }
     public Shape(String color, boolean filled){
         this.color = color;
         this.filled = filled;
+    }
+
+    public Shape(int i) {
     }
 
     public String getColor() {

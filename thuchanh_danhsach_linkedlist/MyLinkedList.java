@@ -1,17 +1,17 @@
 package thuchanh_danhsach_linkedlist;
 
-import javafx.scene.Node;
+
 
 public class MyLinkedList {
     private Node head;
     private int numNodes;
-    public MyLinkedList(Object data){
+    MyLinkedList(Object data){
     }
 
-    private class Node{
+    private static class Node{
         private Node next;
         private Object data;
-        public Node(Object data){
+        Node(Object data){
             this.data = data;
         }
         public Object getData(){
@@ -29,7 +29,7 @@ public class MyLinkedList {
         temp.next.next = holder;
         numNodes++;
     }
-    public void addFirst(Object data){
+    void addFirst(Object data){
         Node temp = head;
         head = new Node(data);
         head.next = temp;
@@ -42,7 +42,7 @@ public class MyLinkedList {
         }
         return temp;
     }
-    public void printList(){
+    void printList(){
         Node temp = head;
         while (temp != null){
             System.out.println(temp.data);
