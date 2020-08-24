@@ -6,7 +6,7 @@ public class Main {
         for (int i = 1; i < list.length; i++){
             int currentElement = list[i];
             int j;
-            for (j = i -1; j > 0 && list[j] > currentElement; j--){
+            for (j = i -1; j >= 0 && list[j] > currentElement; j--){
                 list[j+1] = list[j];
             }
             list[j+1] = currentElement;

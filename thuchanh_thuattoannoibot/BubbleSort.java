@@ -1,4 +1,4 @@
-package thuchanh_thuattuannoibot;
+package thuchanh_thuattoannoibot;
 
 public class BubbleSort {
     static int[] list= {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
@@ -11,6 +11,7 @@ public class BubbleSort {
                     int temp = list[i];
                     list[i] = list[i + 1];
                     list[i + 1] = temp;
+                    needNextPass = true;
                 }
             }
         }
